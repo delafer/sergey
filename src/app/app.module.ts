@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -12,10 +13,11 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
     HelloWorldComponent
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [HelloWorldComponent]
 })
